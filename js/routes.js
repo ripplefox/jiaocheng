@@ -1,9 +1,8 @@
 'use strict';
 
-/**
- * Route configuration for the RDash module.
- */
-angular.module('RDash').config(['$stateProvider', '$urlRouterProvider',
+angular.module('MyApp', ['ui.bootstrap', 'ui.router', 'ngCookies']);
+
+angular.module('MyApp').config(['$stateProvider', '$urlRouterProvider',
     function($stateProvider, $urlRouterProvider) {
 
         // For unmatched routes

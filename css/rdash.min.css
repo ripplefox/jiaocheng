@@ -176,8 +176,7 @@
 	animation-delay: -1s
 }
 
-@
--webkit-keyframes bounce { 0%,100%{
+@-webkit-keyframes bounce { 0%,100%{
 	-webkit-transform: scale(0)
 }
 
@@ -186,8 +185,7 @@
 :scale(1)
 }
 }
-@
-keyframes bounce { 0%,100%{
+@keyframes bounce { 0%,100%{
 	transform: scale(0);
 	-webkit-transform: scale(0)
 }
