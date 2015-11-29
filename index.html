@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>瑞波教程</title>
-  
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/rdash.min.css">
@@ -29,32 +29,42 @@
       <ul class="sidebar">
         <li class="sidebar-main">
           <a ng-click="toggleSidebar()">
-            瑞波教程
+          	瑞波教程
             <span class="menu-icon glyphicon glyphicon-transfer"></span>
           </a>
         </li>
-        <li class="sidebar-title"><span>NAVIGATION</span></li>
+        <li class="sidebar-title"><span>基础导航</span></li>
         <li class="sidebar-list">
-          <a href="#">Dashboard <span class="menu-icon fa fa-tachometer"></span></a>
+          <a href="#/create">创建钱包 <span class="menu-icon fa fa-credit-card"></span></a>
         </li>
         <li class="sidebar-list">
-          <a href="#/tables">Tables <span class="menu-icon fa fa-table"></span></a>
+          <a href="#/trust">信任网关 <span class="menu-icon fa fa-chain"></span></a>
         </li>
+        <li class="sidebar-list">
+          <a href="#/taobao">充值 <span class="menu-icon fa fa-cny"></span></a>
+        </li>
+        <li class="sidebar-list">
+          <a href="#/withdraw">提现<span class="menu-icon fa fa-cny"></span></a>
+        </li>
+        <li class="sidebar-list">
+          <a href="#/trade">交易<span class="menu-icon fa fa-money"></span></a>
+        </li>
+        
+        <li class="sidebar-title"><span>进阶教程</span></li>
+        <li class="sidebar-list">
+          <a href="#/manual">人工提现<span class="menu-icon fa fa-money"></span></a>
+        </li>
+        
       </ul>
       <div class="sidebar-footer">
-        <div class="col-xs-4">
-          <a href="https://github.com/rdash/rdash-angular" target="_blank">
-            Github
+        <div class="col-xs-6">
+          <a href="http://download.ripplefox.com" target="_blank">
+			下载钱包
           </a>
         </div>
-        <div class="col-xs-4">
-          <a href="https://github.com/rdash/rdash-angular/README.md" target="_blank">
-            About
-          </a>
-        </div>
-        <div class="col-xs-4">
-          <a href="#">
-            Support
+        <div class="col-xs-6">
+          <a href="https://ripplefox.taobao.com" target="_blank">
+          	淘宝充值
           </a>
         </div>
       </div>
@@ -70,57 +80,24 @@
             <div class="user pull-right">
               <div class="item dropdown">
                 <a href="#" class="dropdown-toggle">
-                  <img src="img/avatar.jpg">
+                  <img src="img/logo.png">
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right">
-                  <li class="dropdown-header">
-                    Joe Bloggs
+                  <li class="link">
+                    <a href="#">选择瑞狐的理由</a>
                   </li>
                   <li class="divider"></li>
-                  <li class="link">
-                    <a href="#">
-                      Profile
-                    </a>
-                  </li>
-                  <li class="link">
-                    <a href="#">
-                      Menu Item
-                    </a>
-                  </li>
-                  <li class="link">
-                    <a href="#">
-                      Menu Item
-                    </a>
-                  </li>
-                  <li class="divider"></li>
-                  <li class="link">
-                    <a href="#">
-                      Logout
-                    </a>
-                  </li>
+                  <li class="link"><a>QQ群 389185252</a></li>
                 </ul>
               </div>
-              <div class="item dropdown">
-               <a href="#" class="dropdown-toggle">
-                  <i class="fa fa-bell-o"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-right">
-                  <li class="dropdown-header">
-                    Notifications
-                  </li>
-                  <li class="divider"></li>
-                  <li>
-                    <a href="#">Server Down!</a>
-                  </li>
-                </ul>
-              </div>
+              
             </div>
             <div class="meta">
               <div class="page">
-                Dashboard
+				最新最详细的瑞波教程
               </div>
               <div class="breadcrumb-links">
-                Home / Dashboard
+              	由瑞狐网关提供
               </div>
             </div>
           </div>
@@ -128,7 +105,7 @@
         <!-- End Header Bar -->
 
         <!-- Main Content -->
-        <div ui-view></div>
+        <div ui-view autoscroll="false"></div>
 
       </div><!-- End Page Content -->
     </div><!-- End Content Wrapper -->

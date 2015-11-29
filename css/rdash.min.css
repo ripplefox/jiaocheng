@@ -198,7 +198,7 @@ transform
 }
 }
 @font-face {
-	font-family: Montserrat;
+	font-family: Microsoft YaHei,Arial,Verdana,sans-serif,Segoe UI,Tahoma,Montserrat;
 	src: url(../fonts/montserrat-regular-webfont.eot);
 	src: url(../fonts/montserrat-regular-webfont.eot?#iefix)
 		format('embedded-opentype'),
@@ -212,11 +212,11 @@ transform
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	@font-face {
-		font-family: Montserrat;
+		font-family: Microsoft YaHei,Arial,Verdana,sans-serif,Segoe UI,Tahoma,Montserrat;
 		src: url(../fonts/montserrat-regular-webfont.svg) format('svg')
 	}
 	select {
-		font-family: Arial, Helvetica, sans-serif
+		font-family: Microsoft YaHei,Arial,Verdana,sans-serif,Segoe UI,Tahoma, Helvetica
 	}
 }
 
@@ -226,7 +226,7 @@ html {
 
 body {
 	background: #f3f3f3;
-	font-family: Montserrat;
+	font-family: Microsoft YaHei,Arial,Verdana,sans-serif,Segoe UI,Tahoma,Montserrat;
 	color: #333 !important
 }
 
