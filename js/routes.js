@@ -28,6 +28,9 @@ angular.module('MyApp').config(['$stateProvider', '$urlRouterProvider',
 			}).state('trade', {
 				url : '/trade',
 				templateUrl : 'templates/trade.html'
+			}).state('addnode', {
+				url : '/addnode',
+				templateUrl : 'templates/addnode.html'
 			}).state('manual', {
 				url : '/manual',
 				templateUrl : 'templates/manual.html'
