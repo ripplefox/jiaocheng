@@ -37,6 +37,9 @@ angular.module('MyApp').config(['$stateProvider', '$urlRouterProvider',
 			}).state('bot', {
 				url : '/bot',
 				templateUrl : 'templates/bot.html'
+			}).state('fmm', {
+				url : '/fmm',
+				templateUrl : 'templates/fmm.html'
 			});
     }
 ]);
