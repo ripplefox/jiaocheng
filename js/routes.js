@@ -34,6 +34,9 @@ angular.module('MyApp').config(['$stateProvider', '$urlRouterProvider',
 			}).state('manual', {
 				url : '/manual',
 				templateUrl : 'templates/manual.html'
+			}).state('lost', {
+				url : '/lost',
+				templateUrl : 'templates/lost.html'
 			}).state('bot', {
 				url : '/bot',
 				templateUrl : 'templates/bot.html'
