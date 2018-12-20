@@ -28,7 +28,10 @@ angular.module('MyApp').config(['$stateProvider', '$urlRouterProvider',
 			}).state('trade', {
 				url : '/trade',
 				templateUrl : 'templates/trade.html'
-			}).state('xlm', {
+			}).state('ult', {
+        url : '/ult',
+        templateUrl : 'templates/tradeULT.html'
+      }).state('xlm', {
 				url : '/xlm',
 				templateUrl : 'templates/tradeXLM.html'
 			}).state('usd', {
