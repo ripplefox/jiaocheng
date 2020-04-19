@@ -1,23 +1,25 @@
 <div class="row" style="padding: 10px">
 	<div class="panel panel-default">
-		<div class="panel-heading">安装环境</div>
+		<div class="panel-heading">使用最新的ripple-lib</div>
 		<div class="panel-body">
-			<h4>ripple-lib版本在0.12后基本重写，最新的语法请到ripple.com/build上看。</h4>
 			<p>
-				如果你用网页编程：可以直接用右键保存 <a href="js/lib/ripple-0.12.0-min.js">ripple-0.12.0-min.js</a>
-			</p>
-			<p>
-				如果你用node.js，请安装node后，使用命令 npm install ripple-lib@0.12.0
+				看官网的详细文档<a href="https://xrpl.org/rippleapi-reference.html" target="_blank">https://xrpl.org/rippleapi-reference.html</a>
 			</p>
 		</div>
 	</div>
 	<div class="panel panel-default">
-		<div class="panel-heading">求例</div>
+		<div class="panel-heading">使用ripple-lib 0.12</div>
+		<div class="panel-body">
+			<p>ripple-lib版本在0.12后基本重写，但ripplerm建立了一个ripplelib的开发包。你可以使用npm install ripplelib来安装。</p>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">示例</div>
 		<div class="panel-body">
 			<pre class="prettyprint">
-var Remote	= require('ripple-lib').Remote;
-var Amount	= require('ripple-lib').Amount;
-var Account	= require('ripple-lib').Account;
+var Remote	= require('ripplelib').Remote;
+var Amount	= require('ripplelib').Amount;
+var Account	= require('ripplelib').Account;
 
 var remote_config = {
 	max_listeners : 100,
