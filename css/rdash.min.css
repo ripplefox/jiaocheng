@@ -521,3 +521,7 @@ ul.sidebar .sidebar-list .menu-icon {
 	font-size: 28px;
 	display: block
 }
+
+.panel-body img {
+	margin-bottom: 15px;
+}
