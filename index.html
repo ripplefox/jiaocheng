@@ -1,133 +1,204 @@
 <!doctype html>
-<html lang="en" ng-app="MyApp">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="瑞波教程,Ripple教程,瑞波币教程,XRP教程,瑞波中国教程,瑞波币中国教程,瑞波币充值提现教程" />
-  <meta name="description" content="瑞波教程，瑞波币教程，介绍如何创建瑞波钱包，交易。以及Ripple入门的各种基本功能和技巧">
-  <meta name="author" content="瑞狐网关">
-	
-  <title>瑞波教程|Ripple教程</title>
-  
-  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.bootcss.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-	
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" type="text/css" href="css/rdash.min.css">
-  <link rel="stylesheet" type="text/css" href="css/prettify.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="瑞波教程,Ripple教程,瑞波币教程,XRP教程,瑞波铭文教程,XRPS教程" />
+    <meta name="description" content="介绍如何创建瑞波钱包，添加网关，交易XRP和XRPS等Token。以及Ripple入门的各种基本功能和技巧">
+  	<title>瑞波教程|Ripple教程</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+    <style>
+      body {
+        font-family: "Microsoft YaHei", sans-serif; /* 设置字体为微软雅黑 */
+      }
+    </style>
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	        </button>
+        </div>
+	  		<div class="img bg-wrap text-center py-4" style="background-image: url(images/bg_1.jpg);">
+	  			<div class="user-logo">
+	  				<div class="img" style="background-image: url(images/xrp.png);"></div>
+	  				<h3>瑞波教程</h3>
+	  			</div>
+	  		</div>
+        <ul class="list-unstyled components mb-5">
+          <li class="nav-link active" data-content="home">
+            <a href="#"><span class="fa fa-home mr-3"></span> 瑞波资源</a>
+          </li>
+          <li class="nav-link" data-content="create">
+              <a href="#"><span class="fa-solid fa-wallet mr-3"></span> 创建钱包</a>
+          </li>
+          <li class="nav-link" data-content="trust">
+            <a href="#"><span class="fa fa-gift mr-3"></span> 信任网关</a>
+          </li>
+          <li class="nav-link" data-content="trade">
+            <a href="#"><span class="fa fa-money-bill-trend-up mr-3"></span> 交易</a>
+          </li>
+          <li class="nav-link" data-content="xrps">
+            <a href="#"><span class="fa fa-trophy mr-3"></span> 交易XRPS</a>
+          </li>
+          <li class="nav-link" data-content="xlm">
+            <a href="#"><span class="fa fa-trophy mr-3"></span> 交易XLM</a>
+          </li>
+          <li class="nav-link" data-content="settings">
+            <a href="#"><span class="fa fa-cog mr-3"></span> 设置网络</a>
+          </li>
+          <li class="nav-link" data-content="support">
+            <a href="#"><span class="fa fa-circle-question mr-3"></span> 技术支持</a>
+          </li>
+        </ul>
 
-  <script type="text/javascript" src="https://cdn.bootcss.com/angular.js/1.2.29/angular.min.js"></script>
-  <script type="text/javascript" src="https://cdn.bootcss.com/angular.js/1.2.29/angular-cookies.min.js"></script>
-  <script type="text/javascript" src="https://cdn.bootcss.com/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
-  <script type="text/javascript" src="https://cdn.bootcss.com/angular-ui-bootstrap/0.11.2/ui-bootstrap-tpls.min.js"></script>
+    	</nav>
 
-  <script type="text/javascript" src="js/routes.js"></script>
-  <script type="text/javascript" src="js/directives.js"></script>
-  <script type="text/javascript" src="js/controllers/alert-ctrl.js"></script>
-  <script type="text/javascript" src="js/controllers/master-ctrl.js"></script>
-  
-</head>
-<body ng-controller="MasterCtrl">
-  <div id="page-wrapper" ng-class="{'open': toggle}" ng-cloak>
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <div id="home" class="tutorial-content"> 
+          <h2 class="mb-4">瑞波资源</h2>
+          <p>瑞波目前有网页钱包，手机钱包，还有电脑钱包。这些钱包都是去中心化的，<strong>一定要自己保存好助记词</strong>。丢失无法恢复。</p>
+          <p>网页钱包：<a href="https://snapswap.com" target="_blank">snapswap.com</a>。由XRPS团队运营，也可通过通过<a href="https://xrps.io" target="_blank">xrps.io</a>网站，点击wallet进入。</p>
+          <p>手机钱包：XagToken。由XAG Labs维护。可通过官网链接直接下载安装。仅支持安卓手机，APP支持Ripple和XAG两条链。点击<a href="https://xrpgen.com/files/XagToken7.0.0.apk" target="_blank">7.0 APK</a>下载。</p>
+          <p>电脑钱包：
+            <ul>
+              <li>国外github下载或自行编译：<a href="https://github.com/ripplefox/ripplewallet/releases" target="_blank"><i class="fa-brands fa-github"></i> <small>Windows, Linux &amp; Mac</small></a></li>
+              <li>QQ群196561940，703611153的群文件下载。</li>
+              <li>国内<a href="https://pan.baidu.com/s/1sosDPDtwbMDhwHdz-1Dh7w" target="_blank">百度网盘</a>下载。提取码：<strong>iyzp</strong></li>
+            </ul>
+          </p>
+          <p>以上三种钱包助记词通用。有问题可加QQ群询问社区。</p>
+          <p><img src="images/qq.jpg" height="200px"></p>
+        </div>
 
-    <!-- Sidebar -->
-    <div id="sidebar-wrapper">
-      <ul class="sidebar">
-        <li class="sidebar-main">
-          <a ng-click="toggleSidebar()">
-          	瑞波教程
-            <span class="menu-icon glyphicon glyphicon-transfer"></span>
-          </a>
-        </li>
-        <li class="sidebar-title"><span>基础导航</span></li>
-        <li class="sidebar-list">
-          <a href="#/create">创建钱包 <i class="menu-icon fa fa-plus-square"></i></a>
-        </li>
-        <li class="sidebar-list">
-          <a href="#/trust">信任网关 <i class="menu-icon fa fa-chain"></i></a>
-        </li>
-        <li class="sidebar-list">
-          <a href="#/taobao">充值提现<i class="menu-icon fa fa-credit-card"></i></a>
-        </li>
-        <li class="sidebar-list">
-          <a href="#/trade">交易<span class="menu-icon fa fa-exchange"></span></a>
-        </li>
-        <li class="sidebar-list">
-          <a href="#/ult">交易ULT<span class="menu-icon fa fa-exchange"></span></a>
-        </li>
-        <li class="sidebar-list">
-          <a href="#/xlm">交易恒星<span class="menu-icon fa fa-exchange"></span></a>
-        </li>
-        <li class="sidebar-list">
-          <a href="#/usd">交易USDT<span class="menu-icon fa fa-exchange"></span></a>
-        </li>
-        <li class="sidebar-list">
-          <a href="#/lost">钱包追踪<span class="menu-icon fa fa-user-md"></span></a>
-        </li>
+        <div id="create" class="tutorial-content" style="display: none;"> 
+          <h2 class="mb-4">网页或电脑</h2>
+          <p>先选择语言。网页钱包在中间，电脑钱包在右下角，点击国旗切换成中文。</p>
+          <p>首先，我们点击“创建新账户”链接。以前没有钱包，选择第一个菜单“创建一个全新账户”。如果你有秘钥，选第二个“用密钥创建”。如果你有助记词选“用助记词创建”。</p>
+          <img class="img-thumbnail img-responsive" src="img/create/create2.png">
+          <p>钱包会让你输入一个密码来保护你的钱包文件。此钱包文件在网页钱包中会自动下载(浏览器的“下载”选项可查看）。我们强列建议您用专门的文件夹存放并改一个好记的名字。</p>
+          <img class="img-thumbnail img-responsive" src="img/create/savefile.png">
+          <p>点击“显示密钥”，把12个汉字的助记词抄下来。同时建议把刚才生成的钱包txt文件放优盘存一份。保存好了后，就点“是，我已经保存好了”。​</p>
+          <p>网页钱包出现最开始的界面，这次点击“选择账户文件”，找到保存的文件，再输入密码，就能打开刚创建好的钱包了。</p>
+          <img class="img-thumbnail img-responsive" src="img/create/create.png">
+          <p>网页钱包出现最开始的界面，这次点击“选择账户文件”，找到保存的文件，再输入密码，就能打开刚创建好的钱包了。</p>
+          <p>点击右上角自己的地址，然后复制下来用以激活钱包。</p>
+          <img class="img-thumbnail img-responsive" src="img/create/address.png">
+          <p>钱包地址为r开头，从交易所提币填写此地址，Tag（标签）可随意填写，如888或不填。</p>
+          <hr>
+          <h2 class="mb-4">手机</h2>
+          <p>XagToken是双链钱包。两条链共用同一套助记词/私钥。使用时需要注意在哪一条链上。
+            <ul>
+              <li>创建钱包时选择“瑞波”网络。如果已有Xrpgen钱包但无瑞波钱包，可在右上角添加瑞波钱包。</li>
+              <li>设置密码后并保存好助记词。</li>
+              <li>复制地址用来激活。</li>
+            </ul>
+          </p>
+        </div>
+
+        <div id="trust" class="tutorial-content" style="display: none;"> 
+          <h2 class="mb-4">信任网关</h2>
+          <p>信任网关，也可以叫做添加网关、授权网关。添加网关后，别人才可以发送对应的资产给你，也更方便送交。每添加一个网关，都会冻结2个XRP。</p>
+          <p>在网关菜单下，点击对应的资产即可添加网关。</p>
+          <img class="img-thumbnail img-responsive" src="img/trust/trust.png">
+          <p>如果不再需要此种资产，将资产卖光，然后再删除。冻结的2 XRP会解冻。</p>
+          <hr>
+          <h4 class="mb-4">手机添加资产</h4>
+          <p>在交易右边有个加号，点进去就会出现网关资产列表。添加即可。</p>
+          <img class="img-thumbnail img-responsive" src="img/trust/trust_app.png">
+        </div>
+
+        <div id="trade" class="tutorial-content" style="display: none;"> 
+          <h2 class="mb-4">交易</h2>
+          <p>瑞波自带DEX（去中心化交易所），任意资产都可以进行两两交易。交易分两种，普通交易和兑换交易。</p>
+          <p>兑换交易，直接市价成交。适用于小额多次。选择“交易”，然后点“兑换”。先选择接收哪种货币。只有信任过的网关资产，才可以兑换。</p>
+          <img class="img-thumbnail img-responsive" src="img/trade/convert.png">
+          <p>数字会变，多等一会儿更优惠。出现绿色选项后点击后确认即可完成兑换。兑换不会冻结XRP，如果你的XRP不够，就可以兑换2个XRP供普通交易使用。</p>
+
+          <h4 class="mb-4">普通交易</h4>
+          <p>点“交易”后，在第一个区域可以点“交易对”三个字，进行资产的选择。选好后点“回到交易页面”。</p>
+          <img class="img-thumbnail img-responsive" src="img/trade/tradepair.png">
+          <p>交易的两种资产不能相同，如果可选择的资产不在，那么你应该先添加网关。</p>
+          <p>输入价格和数量进行买卖，提交前注意价格。下单无悔哦。</p>
+          <img class="img-thumbnail img-responsive" src="img/trade/buy.png">
+          <p>在交易界面，你可以管理自己的委托单，并看到市场上的情况。交易过程简单直接。</p>
+
+          <hr>
+          <h4 class="mb-4">手机交易</h4>
+          <p>直接点交易，然后右上角的+号可以选择交易对。</p>
+          <img class="img-thumbnail img-responsive" src="img/trade/trade_app.png">
+        </div>
+
+        <div id="xrps" class="tutorial-content" style="display: none;"> 
+          <h2 class="mb-4">交易瑞波铭文XRPS</h2>
+          <p>XRPS代表着瑞波铭文，是Ripple链上首个集发行、铸造及交易于一体的协议。由一千万张瑞波铭文映射生成，总量100亿。无预留，100%全流通，非常公平、公开。</p>
+          <p>什么是铭文？铭文是指一种将数据嵌入到数字货币的交易中的区块链技术。 铭文本质上是数字标记，为区块链提供了新的实用性和灵活性。XRPS充分利用了Ripple的速度优势和低Gas费用，使得代币交易更为便捷。XRPS弥补了瑞波没有智能合约的缺陷，使瑞波生态更加完善。</p>
+          <p>作为独特的NFT，XRPS将开创瑞波的NFT交易市场，并有潜力引入多样的NFT和艺术家。未来，瑞波还将支持AMM，XRPS还将开创Ripple上的Defi时代，成为聚合交易平台上的唯一代币。曾在ETH链上流行的DeFi产品都可以使用XRPS得到重生，XRPS还会尝试推出ETH链未有的创新产品。想象一下，在XRP链上使用uniswap、opensea、dydx、curve等令人兴奋的产品，这将构建一个壮观的金融生态系统。这正是Ripple社区长期以来梦寐以求但未能触及的未来。</p>
+          <p>让瑞波更强大，从而让XRP重新伟大。让我们从交易并获得XRPS开始。</p>
+          <hr>
+          <h4 class="mb-4">电脑交易</h4>
+          <img class="img-thumbnail img-responsive" src="img/trade/xrps-web-wallet.jpg">
+          <hr>
+          <h4 class="mb-4">手机交易</h4>
+          <img class="img-thumbnail img-responsive" src="img/trade/xrps-app-wallet.jpg">
+        </div>
+
+        <div id="xlm" class="tutorial-content" style="display: none;"> 
+          <h2 class="mb-4">交易恒星</h2>
+          <p>恒星和瑞波有同一个创始人Jed。恒星的总量只有500亿出头，瑞波是1000亿。你可以在瑞波里直接交易恒星。</p>
+          <p>第一步：点“网关”菜单后，找到XLM Stellar Lumens字样。点授信，等六秒左右，就授信成功，可以去交易了。</p>
+          <p>第二步：在交易界面，点击”交易对“，选择XLM作为基础货币，CNY或XRP作为对手方货币。回到交易页面。</p>
+          <p>第三步：输入价格和数量进行买卖。</p>
+
+          <hr>
+          <h4 class="mb-4">瑞波提现到恒星</h4>
+          <p>点击“发送”菜单，在发送那里填入xlm@ripplefox.com</p>
+          <img class="img-thumbnail img-responsive" src="img/xlm/withdraw.png">
+
+        </div>
+
+        <div id="settings" class="tutorial-content" style="display: none;"> 
+          <h2 class="mb-4">设置网络</h2>
+          <p>由于瑞波节点都在美欧，中国使用有时会很卡。设置合适的节点可以让你的钱包更流畅。</p>
+          <p>点击右上角的齿轮，选择设置后可进行节点设置。一般情况下，使用默认设置即可。</p>
+          <ul>
+            <li><strong>us.xrps.io</strong>，XRPS社区节点，速度快。</li>
+            <li><strong>xprl.ws</strong>，XRPL社区节点集群，全功能节点。如果电脑钱包有问题，可以只留这一个节点，保存后进行测试。</li>
+            <li><strong>s1.ripple.com</strong>，官方节点，不支持路径功能，所以发送时会出现“unknown method”错误。只适合做交易和查看历史。</li>
+          </ul>
+        </div>
+
+        <div id="support" class="tutorial-content" style="display: none;"> 
+          <h2 class="mb-4">技术支持</h2>
+          <p>瑞波是去中心化的，一切交易以<a href="https://xrpscan.com" target="_blank">区块浏览器</a>为准。</p>
+          <p>交易生效，无法撤销。这也意味着如果钱包被盗，无法追回。</p>
+          <p>瑞波是美国公司，基本不对社区提供支持。如果你有其他问题，欢迎到老牌的瑞狐社区进行讨论。</p>
+          <p><img src="images/qq.jpg" height="200px"></p>
+        </div>
         
-        <li class="sidebar-title"><span>进阶教程</span></li>
-        <li class="sidebar-list">
-          <a href="#/addnode">钱包加速<span class="menu-icon fa fa-share-alt "></span></a>
-        </li>
-        <!-- <li class="sidebar-list">
-          <a href="#/manual">人工提现<span class="menu-icon fa fa-money"></span></a>
-        </li> -->
-        <li class="sidebar-list">
-          <a href="#/bot">机器人api<span class="menu-icon fa fa-bug"></span></a>
-        </li>
-        <!-- <li class="sidebar-list">
-          <a href="#/fmm">FMM理财<span class="menu-icon fa fa-bank"></span></a>
-        </li> -->
-      </ul>
-      <!--
-      <div class="sidebar-footer">
-        <div class="col-xs-6">
-          <a href="https://download.ripplefox.com" target="_blank">钱包下载</a>
-        </div>
       </div>
-      -->
-    </div>
-    <!-- End Sidebar -->
+		</div>
 
-    <div id="content-wrapper">
-      <div class="page-content">
-
-        <!-- Header Bar -->
-        <div class="row header">
-          <div class="col-xs-12">
-            <div class="user pull-right">
-              <div class="item dropdown">
-                <a href="#" class="dropdown-toggle">
-                  <img src="img/logo.png">
-                </a>
-                <ul class="dropdown-menu dropdown-menu-right">
-                  <li class="link">
-                    <a href="#">瑞波教程首页</a>
-                  </li>
-                  
-                  <li class="divider"></li>
-                  <li class="link"><a href="https://ripplefox.com/">瑞狐官网</a></li>
-                </ul>
-              </div>
-              
-            </div>
-            <div class="meta">
-              <div class="page">
-				最新最详细的瑞波教程
-              </div>
-              <div class="breadcrumb-links">
-              	由瑞狐社区提供
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Header Bar -->
-
-        <!-- Main Content -->
-        <div ui-view autoscroll="false"></div>
-
-      </div><!-- End Page Content -->
-    </div><!-- End Content Wrapper -->
-  </div><!-- End Page Wrapper -->
-</body>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      // 当菜单项被点击时显示相应的内容
+      $(document).ready(function(){
+        $('.nav-link').click(function(){
+          var contentId = $(this).data('content');
+          console.log(contentId);
+          $('.tutorial-content').hide();
+          $('#' + contentId).fadeIn(); // 使用淡入效果显示内容
+        });
+      });
+  </script>
+  </body>
 </html>
