@@ -73,18 +73,19 @@
           <p>网页钱包：<a href="https://snapswap.com" target="_blank">snapswap.com</a>。由XRPS团队运营，也可通过通过<a href="https://xrps.io" target="_blank">xrps.io</a>网站，点击wallet进入。</p>
           <p>手机钱包：
             <ul>
+              <li>XrpSwap，小瑞波社区孵化。目前适配安卓手机。支持AMM和跨链存取USDT等功能。点击<a href="https://download.ripplefox.com/file/XrpSwap1.2.apk" target="_blank">1.2 APK</a>下载。</li>
               <li>XagToken，由XAG Labs维护。仅支持安卓手机，内置Ripple和XAG双链。点击<a href="https://xrpgen.com/files/XagToken7.0.0.apk" target="_blank">7.0 APK</a>下载。</li>
               <li>国外钱包<a href="https://xumm.app/" target="_blank">xaman</a>，也支持苹果手机。第一次使用时需回答问题，答案是bdcdc。</li>
             </ul>
           </p>
           <p>电脑钱包：
-            <ul>
-              <li>国外github下载或自行编译：<a href="https://github.com/ripplefox/ripplewallet/releases" target="_blank"><i class="fa-brands fa-github"></i> <small>Windows, Linux &amp; Mac</small></a></li>
+            <ul>              
               <li>QQ群196561940，703611153的群文件下载。</li>
               <li>国内<a href="https://pan.baidu.com/s/1sosDPDtwbMDhwHdz-1Dh7w" target="_blank">百度网盘</a>下载。提取码：<strong>iyzp</strong></li>
+              <li>国外github自行编译：<a href="https://github.com/ripplefox/ripplewallet/releases" target="_blank"><i class="fa-brands fa-github"></i> <small>Windows, Linux &amp; Mac</small></a></li>
             </ul>
           </p>
-          <p>网页、XagToken、电脑钱包助记词通用。有问题可加QQ群询问社区。</p>
+          <p>网页、手机、电脑钱包助记词通用。有问题可加QQ群询问社区。</p>
           <p>目前持有并交易小瑞波XRPS的新用户可入QQ群196561940并领取600 XRPS的空投。此空投由小瑞波爱好者社区捐赠设立。</p>
           <p><img src="images/qq.jpg" height="200px"></p>
         </div>
@@ -105,11 +106,12 @@
           <p>钱包地址为r开头，从交易所提币填写此地址，Tag（标签）可随意填写，如888或不填。</p>
           <hr>
           <h2 class="mb-4">手机</h2>
-          <p>XagToken是双链钱包。两条链共用同一套助记词/私钥。使用时需要注意在哪一条链上。
+          <p>XrpSwap是专门用于瑞波的手机钱包。与电脑钱包共用同一套助记词/私钥。并且可以管理多个钱包。
             <ul>
-              <li>创建钱包时选择“瑞波”网络。如果已有Xrpgen钱包但无瑞波钱包，可在右上角添加瑞波钱包。</li>
-              <li>设置密码后并保存好助记词。</li>
+              <li>创建钱包时如果有助记词，选择“恢复钱包”。</li>
+              <li>新用户或者无助记词，选择“新建钱包”。设置密码后并保存好助记词。</li>
               <li>复制地址用来激活。</li>
+              <li>有私钥但无助记词的钱包可在创建钱包后使用“导入私钥”功能添加钱包。</li>
             </ul>
           </p>
         </div>
@@ -122,7 +124,7 @@
           <p>如果不再需要此种资产，将资产卖光，然后再删除。冻结的2 XRP会解冻。</p>
           <hr>
           <h4 class="mb-4">手机添加资产</h4>
-          <p>XagToken在交易右边有个加号，点进去就会出现网关资产列表。添加即可。</p>
+          <p>在资产页面的“交易”按钮右边有个加号，点进去就会出现网关资产列表。添加即可。</p>
           <img class="img-thumbnail img-responsive" src="img/trust/trust_app.png">
           <hr>
           <p>Xaman钱包点击下图，按提示扫码然后提交。可自行在浏览器里定义资产代码与地址。</p>
@@ -146,7 +148,7 @@
 
           <hr>
           <h4 class="mb-4">手机交易</h4>
-          <p>XagToken直接点交易，然后右上角的+号可以选择交易对。Xaman使用xApps里的DEX Trade小程序进行交易。</p>
+          <p>XrpSwap直接点“交易”功能即可。XagToken在交易页面使用右上角的+号选择交易对。Xaman使用xApps里的DEX Trade小程序进行交易。</p>
           <img class="img-thumbnail img-responsive" src="img/trade/trade_app.png">
         </div>
 
@@ -196,7 +198,10 @@
           <h4 class="mb-4">提现USDT</h4>
           <p>XRPS跨链协议让跨链变得非常简单。点击“发送”菜单，在接收者那里填入TRC20地址即可。</p>
           <img class="img-thumbnail img-responsive" src="img/usdt/withdraw.png">
-          <p>有问题可到群里寻求管理员帮助。</p>
+          <hr>
+          <h4 class="mb-4">手机充提USDT</h4>
+          <p>XrpSwap集成了充值功能。添加USDT资产后，点击USDT里面的“收款”功能，然后点“跨链”就会显示充值地址。</p>
+          <p>点击USDT里面的“转账”功能，直接扫码或在地址栏里输入TRC20地址即可。</p>
         </div>
 
         <div id="amm" class="tutorial-content" style="display: none;"> 
@@ -217,6 +222,14 @@
           <p>XRPS目前与XRP、USDT、XLM、ETH等有交易对，是瑞波上价值互联网的骨干网络。加入XRPS池子，相当于众筹了瑞波DEX。XRPS相当于骨干网里的数字黄金。加入池子可以分享DEX的手续费，还能等待XRPS的升值。</p>
           <p>使用电脑钱包6.0版本以上，或者直接网页交易。选择好交易对后，如果有池子存在，点击“显示AMM信息”即可打开AMM操作页面。</p>
           <img class="img-thumbnail img-responsive" src="img/trade/xrps-web-amm.jpg">
+
+          <hr>
+          <h4 class="mb-4">手机参与AMM</h4>
+          <p>XrpSwap可方便参与AMM。</p>
+          <ul>
+            <li>交易界面中，如果存在AMM池子。右上角会出现AMM机器人图标，点击即可。</li>
+            <li>在“发现”菜单里，点击“AMM自动做市”功能参与。</li>
+          </ul>
         </div>
 
         <div id="settings" class="tutorial-content" style="display: none;"> 
